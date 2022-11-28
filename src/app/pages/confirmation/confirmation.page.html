@@ -1,0 +1,17 @@
+<ion-content>
+  <div class="general">
+    <div class="title">
+      <ion-text class="ion-text-center"> 
+        <h3>{{clase.clase}}</h3>
+        <h6>{{clase.id}}</h6>
+        <h6>{{clase.seccion}}</h6>
+        <h6>{{clase.classCount}}</h6>
+      </ion-text>
+    </div>
+    
+    <div class="button">
+      <ion-button routerLink="/homestudent" expand="block" class="login" (click)="detalles()">Confirm</ion-button>
+      <ion-button routerLink="/homestudent" expand="block" class="cancel">Cancel</ion-button>
+    </div>
+  </div>  
+</ion-content>
