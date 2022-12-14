@@ -1,0 +1,32 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Student</ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/login"></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="general">
+    <div class="title">
+      <ion-text class="ion-text-center"> 
+        <h1>Hi {{usernameS}}</h1>
+      </ion-text>
+    </div>
+
+    <div  class="attendance">
+      <h3 id="title" class="ion-text-center">general attendance</h3>
+      <ion-button routerLink="/general-attendance" expand="block" class="seemore"> See more</ion-button>
+
+    </div>
+    
+<!--     <div class="button">
+     <ion-button routerLink="/confirmation" expand="block" class="login"> Check the code</ion-button>
+    </div> -->
+    <div class="button">
+      <ion-button routerLink="/scanqr" expand="block" class="login"> Check the code</ion-button>
+     </div>
+
+  </div>  
+</ion-content>

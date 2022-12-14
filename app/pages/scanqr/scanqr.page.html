@@ -1,0 +1,23 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="homestudent"></ion-back-button>
+    </ion-buttons>
+    <ion-title>QR Scanner</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [style.visibility]="content_visibility">
+
+  <ion-button
+    expand="block" 
+    class="ion-margin" 
+    class = "qr-button"
+    (click)="startScan()">
+    Scan QR Code
+  </ion-button>
+
+  <ion-item *ngIf="scannedResult">
+  </ion-item>
+</ion-content>
+

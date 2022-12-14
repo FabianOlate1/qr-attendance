@@ -1,0 +1,35 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Recuperar contraseña</ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="login"></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-text class="ion-text-center ion-text-capitalize">
+    <h3 class="title">Cambiar Contraseña</h3>
+  </ion-text>
+  <form #frm="ngForm" (ngSubmit)="onSubmit()">
+    <ion-item>
+      <ion-label position="floating">Usuario</ion-label>
+      <ion-input required type="text" name="username" [(ngModel)]="usuario.username" clearInput></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="floating">Correo</ion-label>
+      <ion-input required type="text" name="Correo" [(ngModel)]="usuario.email"  clearInput></ion-input>
+    </ion-item>
+    
+    <ion-item >
+      <ion-label position="floating">Nueva contraseña</ion-label>
+      <ion-input required type="password" name="pass" [(ngModel)]="usuario.password"></ion-input>
+    </ion-item>
+
+    <ion-button class="login"  expand="block" color="primary" type="submit" [disabled]="frm.invalid" >
+      Cambiar Contraseña
+    </ion-button>
+  </form>
+
+</ion-content>
